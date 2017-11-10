@@ -11,7 +11,7 @@ a{
 nav{
 	width: 100%;
 	height: 80px;
-	background: white;
+	background: #fff;
 	/*固定定位,整个导航条跟着动*/
 	position: fixed;
 	left:0;
@@ -33,7 +33,7 @@ nav .content .head{
 	/*position: relative;*/
 	margin-top:5px;
 	margin-left:20px;
-	border:1px solid #7f7f7f;
+	border:2px solid #bbb;
 	background-image:url(../img/20171108210047.png) ;
 	background-size: 100%;
 }
@@ -75,9 +75,26 @@ header .mask{
 	width: 100%;
 	height: 100%;
 }
+header .mask a{
+	/*width: 100px;*/
+	/*height: 100px;*/
+	color:#fff000;
+	float:right;
+	position: fixed;
+	right:50px;
+	bottom: 50px;
+	font-size: 26px;
+	font-family: arial;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+header a:hover{
+	transform: scale(1.2,1.2);
+}
 /*BANNER文字*/
 header p{
-	width: 200px;
+	width: 400px;
 	height: 200px;
 	color:white;
 	position:absolute;
@@ -86,23 +103,65 @@ header p{
 	top: 50PX;
 	bottom: 0;
 	margin:auto;
-	font-size:36px;
+	font-size:24px;
 	text-align: center;
 	font-family: "微软雅黑";
 }
 header h2{
 	width: 500px;
-	height: 500px;
+	height: 100px;
 	color:white;
 	position:absolute;
 	left:0;
 	right:0;
-	top: 500px;
+	top: 40px;
 	bottom: 0;
 	margin:auto;
-	font-size:48px;
+	font-size:56px;
 	text-align: center;
 	font-family: arial;
+}
+header .mask .btn{/*选择器按钮*/
+	width: 245px;
+	height: 62px;
+	border: 1px solid white;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 15px;/*圆角*/
+	font-family: "微软雅黑";
+	cursor: pointer;/*鼠标样式*/
+	position: absolute;
+	top:200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	cursor: pointer;鼠标样式
+	transition:background 0.8s; 
+}
+
+header .btn:hover{
+	background: #4eb2d6;
+}
+
+header img{
+	/*动画*/
+	width: 70px;
+	height: 60px;
+	position: absolute;
+	top:530px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	animation: move 1s infinite ;
+}
+@keyframes move{/*动画规则*/
+	0%{margin-top: 20px;}
+	50%{margin-top: 60px;}
+	100%{margin-top: 20px;}
 }
 /*专业技能*/
 .professional{
@@ -125,7 +184,7 @@ header h2{
 	border-left:15px solid transparent;
 	border-right:15px solid transparent;
 	border-top:0;
-	border-bottom:20px solid #1A1D34;
+	border-bottom:20px solid #050612;
 	/*剧中*/
 	margin:0 auto;
 	/*向上移动*/
@@ -136,8 +195,8 @@ header h2{
 	width: 100%;
 	height: 380px;
 	/*此处需要加背景图片*/
-	background-image:url(../img/500322883.jpg) ;
-/*	background: blueviolet;*/
+	background-image:url(../img/500337406.jpg) ;
+	/*background: blueviolet;*/
 	background-repeat:no-repeat ;
 	background-size:100%;
 	background-position:center ;
@@ -295,12 +354,16 @@ header h2{
 .design_box ul li a{
 	color:#666;
 	float:right;
-	margin-top: 15px;
-	margin-rig
+	margin-top: 30px;
+	
+}
+.design_box ul li a:hover{
+	color:#4eb2d6;
 }
 .software{
 	width: 100%;
 	height: 420px;
+	margin-top:80px;
 	background: #555;
 	background-image:url(../img/500335482.jpg) ;
 	background-size:100% ;
@@ -334,16 +397,16 @@ header h2{
 }
 .software ul li{
 	height: 100%;
-	width: 180px;
-	margin-right:24px ;
+	width: 150px;
+	margin-right:54px ;
 	float:left;
 	margin-top:-30px;
 	/*background: peachpuff;*/
 }
 
 .software ul li .rotate{
-	width: 180px;
-	height:180px;
+	width: 150px;
+	height:150px;
 	/*background: blue;*/
 	transition: transform 1s;
 	/*background: blue;*/
@@ -383,6 +446,12 @@ footer .self{
 	overflow: hidden;
 	background-image:url(../img/20171109132513.jpg) ;
 	background-size: 100%;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+footer .self:hover{
+	transform: scale(1.2,1.2);
+	
 }
 footer p{
 	color:#999;
@@ -391,20 +460,30 @@ footer p{
 	margin-top:30px;
 	text-align: center;
 	line-height: 1.5em;
+	font-size:14px;
 }
 footer h3{
 	width: 100%;
 	text-align: center;
-	color:#777;
-	margin-top:30px;
+	color:#aaa;
+	line-height: 40px;
+	margin-top:10px;
+	margin-bottom: 20px;
+	cursor:pointer;
 	font-family: arial;
+	float:left;
+	transition:color 0.5s,font-size 0.5s;
+}
+footer h3:hover{
+	color:#4EB2D6;
+	font-size:24px;
 }
 footer ul{
 	width: 800px;
 	height: 180px;
 	margin:0 auto;
 	margin-top:40px;
-	/*background: black;*/
+	/*background: black; ;*/
 }
 footer ul li{
 	width: 200px;
@@ -421,8 +500,8 @@ footer ul li div{
 	text-align: center;
 	line-height: 90px;
 	color:#fff;
-	
 }
+
 footer ul li p{
 	width: 100%;
 	height: 50px;
