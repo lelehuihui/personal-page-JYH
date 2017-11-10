@@ -148,8 +148,8 @@ header .btn:hover{
 
 header img{
 	/*动画*/
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 60px;
 	position: absolute;
 	top:530px;
 	left: 0;
@@ -175,6 +175,7 @@ header img{
 	line-height: 80px;
 	color:#474747;
 	font-family: arial;
+	font-weight: 500px;
 }
 
 /*三角*/
