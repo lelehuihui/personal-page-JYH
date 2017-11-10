@@ -208,13 +208,12 @@ header img{
 	background: rgba(0,0,0,0.5);
 }
 .professional .skills_box ul{
-	四个技能是放到有内宽的盒子中的
+	/*四个技能是放到有内宽的盒子中的*/
 	width: 1200px;
 	/*background: greenyellow;*/
 	/*整个内宽的盒子剧中*/
 	margin:0 auto;
 	overflow: hidden;
-	margin-left:75px;
 }
 .professional .skills_box ul li{
 	width: 225px;
@@ -274,7 +273,7 @@ header img{
 }
 /*disgn works*/
 .design_box{
-	width: 1000px;
+	width: 1200px;
 	height: 770px;
 	/*background: pink;*/
 	/*居中*/
@@ -301,7 +300,7 @@ header img{
 	height: 100%;
 	/*background: aqua;*/
 	float:left;
-	margin-right: 50px;
+	margin-right: 150px;
 	position: relative;
 /*	transition: display 3s;*/
 }
