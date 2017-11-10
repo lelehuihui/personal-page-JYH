@@ -50,9 +50,9 @@ nav .content ul li{
 	line-height: 80px;
 	margin-right:24px;
 	font-family: arial;
-	color:#333;
+	color:#666;
 	cursor:pointer;
-	font-size:14px
+	font-size:14px;
 }
 /*Header BANNER*/
 header {
@@ -355,7 +355,7 @@ header img{
 	color:#666;
 	float:right;
 	margin-top: 30px;
-	
+	font-family: arial;
 }
 .design_box ul li a:hover{
 	color:#4eb2d6;
@@ -461,6 +461,7 @@ footer p{
 	text-align: center;
 	line-height: 1.5em;
 	font-size:14px;
+	font-family: "微软雅黑";
 }
 footer h3{
 	width: 100%;
@@ -472,11 +473,10 @@ footer h3{
 	cursor:pointer;
 	font-family: arial;
 	float:left;
-	transition:color 0.5s,font-size 0.5s;
+	transition:color 0.5s;
 }
 footer h3:hover{
 	color:#4EB2D6;
-	font-size:24px;
 }
 footer ul{
 	width: 800px;
