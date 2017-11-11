@@ -516,7 +516,7 @@ footer ul li p{
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
-	animation: move 4s infinite;
+	transition: margin-bottom 0.5s;
 }
 .backtop:hover{
 	margin-bottom: 10px;
